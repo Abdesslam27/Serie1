@@ -1,4 +1,3 @@
-// Avec l'allocation dynamique : 
 #include<iostream>
 
 using namespace std;
@@ -51,5 +50,3 @@ void afficher(int *n, int *t) {
         cout << "A[" << i + 1 << "] = " << t[i] << endl;
     }
 }
-
-

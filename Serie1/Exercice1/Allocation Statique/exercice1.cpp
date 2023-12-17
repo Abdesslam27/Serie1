@@ -2,14 +2,14 @@
 
 using namespace std;
 
-int tab(int n , int T[20]){
+void tab(int n , int T[20]){
 	for(int i = 0 ; i < n ; i++){
 		cout << "Element "<< i+1 << " = ";
 		cin >> T[i];
 	}
 }
 
-int trier(int T[20] , int n){
+void trier(int T[20] , int n){
 	int temp ;
 	for (int i = 0 ; i< n ; i++){
 		for(int j = i+1 ; j < n ; j++){
@@ -23,14 +23,14 @@ int trier(int T[20] , int n){
 }
 
 
-int fusionner(int T1[20] , int n , int T2[20] , int T[20] , int x ){
+void fusionner(int T1[20] , int n , int T2[20] , int T[20] , int x ){
 	for(int i = 0 ; i < n ; i++){
 		T[i] = T1[i];
 		T[i+n] = T2[i];
 	}
 }
 
-int afficher(int x , int T[20]){
+void afficher(int x , int T[20]){
 	for (int i = 0 ; i < x ; i ++){
 		cout << "Element " << i+1 << " : " << T[i];
 		cout << "\n" ;
